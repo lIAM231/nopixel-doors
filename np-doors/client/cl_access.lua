@@ -70,7 +70,7 @@ function isGOV(job)
 end
 
 function getBusinesses()
-    if businessesCacheTimer ~= nil and businessesCacheTimer + 60000 > GetGameTimer() then -- 1 minute
+    if businessesCacheTimer ~= nil and businessesCacheTimer + 60000 > GetGameTimer() then 
         return businesses
     end
     local characterId = exports["isPed"]:isPed("cid")
